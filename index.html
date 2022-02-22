@@ -1,13 +1,188 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="IT school student" />
+    <meta name="keywords" content="HTML" />
+    <meta name="author" content="Maria Konstantinava" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <img src="./images/kitty.jpg" alt="Kitty with pie." />
 
-</body>
+    <ol>
+      <li>
+        Знакомство с WEB
+        <ul>
+          <li>Кратка история Web и что такое интернет.</li>
+          <li>Как устроен браузер и как он получает страницы по сети.</li>
+          <li>Что такое Git?</li>
+          <li>Создание первого репозитория.</li>
+          <li>О файле .gitignore.</li>
+        </ul>
+      </li>
+
+      <li>
+        HTML-верстка - первые шаги
+        <ul>
+          <li>Настроика рабочей среды.</li>
+          <li>Краткая история HTML.</li>
+          <li>Какие бывают теги и что такое атрибут.</li>
+          <li>Теги для работы с текстом.</li>
+          <li>Создание собственной страницы.</li>
+        </ul>
+      </li>
+
+      <li>
+        Погружение в HTML-разметку
+        <ul>
+          <li>Мета-теги.</li>
+          <li>Мнемоники.</li>
+          <li>Тег для работы с изображением.</li>
+          <li>Теги для работы со списками.</li>
+          <li>Теги для работы с таблицами.</li>
+          <li>Теги для работы с формами.</li>
+          <li>Div-блоки.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <table border="1" width="50%">
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>&lt;table&gt;</td>
+          <td>Defines in a table</td>
+        </tr>
+        <tr>
+          <td>&lt;tr&gt;</td>
+          <td>Defines a row in a table</td>
+        </tr>
+        <tr>
+          <td>&lt;th&gt;</td>
+          <td rowspan="2">Defines a "header cell" / "cell" in a table</td>
+        </tr>
+        <tr>
+          <td>&lt;td&gt;</td>
+        </tr>
+        <tr>
+          <td colspan="2">Rarely used</td>
+        </tr>
+        <tr>
+          <td>&lt;caption&gt;</td>
+          <td>Defines a table caption</td>
+        </tr>
+        <tr>
+          <td>&lt;thead&gt;</td>
+          <td>Groups the header content in a table</td>
+        </tr>
+        <tr>
+          <td>&lt;tbody&gt;</td>
+          <td>Groups the body content in a table</td>
+        </tr>
+        <tr>
+          <td>&lt;tfoot&gt;</td>
+          <td>Groups the footer content in a table</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+
+    <form action="/" method="get">
+      <fieldset>
+        <legend>My first form</legend>
+
+        <p>
+          <label for="name1">Name</label><br />
+          <input
+            id="name1"
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="e-mail">Email</label><br />
+          <input id="e-mail" type="email" name="email" required />
+        </p>
+
+        <p>
+          <label for="passw">Password</label><br />
+          <input id="passw" type="password" name="password" required />
+        </p>
+
+        <p>
+          <label for="slider1">Your programming level</label>
+          <input
+            id="slider1"
+            name="slider1"
+            type="range"
+            min="0"
+            max="10"
+            value="8"
+          />
+        </p>
+
+        <p>What does HTML stand for?</p>
+        <p>
+          <input id="chB1" type="checkbox" name="checkBox" value="1" />
+          <label for="chB1">Hyperlinks and Text Markup Language</label><br />
+          <input id="chB2" type="checkbox" name="checkBox" value="2" />
+          <label for="chB2">Home Tool Markup Language</label><br />
+          <input id="chB3" type="checkbox" name="checkBox" value="3" />
+          <label for="chB3">Hyper Text Markup Language</label><br />
+        </p>
+
+        <p>What does HTTP stand for?</p>
+        <p>
+          <input id="radio1" type="radio" name="radio" value="1_" />
+          <label for="radio1">Hyper Text Translate Protocol</label><br />
+          <input id="radio2" type="radio" name="radio" value="2_" />
+          <label for="radio2">Hyper Text Transmission Protocol</label><br />
+          <input id="radio3" type="radio" name="radio" value="3_" />
+          <label for="radio3">Hyper Text Transfer Protocol</label><br />
+        </p>
+
+        <p>
+          <label for="textArea">Comment</label><br />
+          <textarea
+            id="textArea"
+            placeholder="comment"
+            name="comment"
+            maxlength="500"
+          >
+comment</textarea
+          >
+        </p>
+
+        <p>
+          <label for="select1">What does HTML stand for?</label><br />
+          <select name="select1" id="select1">
+            <option disabled selected>Your answer</option>
+            <option value="1__">Hyper Text Translate Protocol</option>
+            <option value="2__">Hyper Text Transmission Protocol</option>
+            <option value="3__">Hyper Text Transfer Protocol</option>
+          </select>
+        </p>
+
+        <button>Send</button>
+      </fieldset>
+    </form>
+
+    <hr />
+  </body>
 </html>
