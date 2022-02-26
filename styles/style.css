@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top-section{
+    height: 200px;
+    background: #10367C;
+}
+
+.homes{
+    height: 200px;
+    background: #EAF0F9;
+}
+
+.advantages{
+    padding: 120px 100px;
+}
+
+.title-text{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.title:hover{
+    opacity: 0.5;
+}
+
+.highlight{
+    width: 100px;
+    height: 4px;
+    background: #F5BD41;
+    margin: auto;
+}
+
+.container{
+    width: 90%;
+    margin: 80px auto 120px;
+}
+
+.element{
+    display: inline-block;
+    width: 24.5%;
+}
+
+.element:hover{
+    background: #EAF0F9;
+}
+
+.text{
+    text-align: center;
+}
+
+.image{
+    display: block;
+    margin: auto auto 50px;
+}
