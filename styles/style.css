@@ -1,0 +1,116 @@
+@import url("./fonts.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/*_________________________TOP-SECTION___________________________*/
+
+.top-section {
+  height: 200px;
+  background: #10367c;
+}
+
+/*_______________________WHAT DO WE OFFER SECTION________________*/
+
+.advantages {
+  color: #383838;
+  font-size: 24px;
+}
+
+.container {
+    padding: 120px 0;
+  max-width: 1230px;
+  margin: auto;
+}
+
+.title {
+  margin: 0 auto;
+}
+
+.title-text {
+  font-weight: 500;
+  font-size: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.title:hover {
+  opacity: 0.5;
+}
+
+.highlight {
+  width: 100px;
+  height: 4px;
+  background: #f5bd41;
+  margin: auto;
+  border: none;
+}
+
+.flex-container {
+  display: flex;
+  gap: 10px;
+  line-height: 1;
+  margin: 80px auto 0px;
+}
+
+.element {
+  width: 25%;
+}
+
+.element:hover {
+  background: #eaf0f9;
+}
+
+.text {
+  text-align: center;
+}
+
+.image {
+  display: block;
+  margin: auto auto 50px;
+}
+
+/*______________________________FOOTER____________________________*/
+
+.footer {
+  background: #10367c;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 23px;
+    font-style: normal;
+}
+
+.foot-groups{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.foot-element{
+    padding-left: -2%;
+    width: 33.3333%;
+}
+
+.foot-list{
+    margin: 24px 0 65px;
+    list-style: none;
+}
+
+.foot-list li{
+    margin: 24px 0;
+}
+
+.foot-list li:hover{
+    opacity: 0.7;
+}
+
+.foot-text{
+    margin: auto;
+    font-weight: 400;
+    font-size: 14px;
+}
