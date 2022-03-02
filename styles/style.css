@@ -1,23 +1,40 @@
+@import url("./fonts.css");
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
+
+/*_____________________TOP-SECTION___________________________*/
 
 .top-section {
   height: 200px;
   background: #10367c;
 }
 
-.homes {
-  height: 200px;
-  background: #eaf0f9;
-}
+/*_______________________WHAT DO WE OFFER SECTION________________*/
 
 .advantages {
-  padding: 120px 100px;
+  color: #383838;
+  font-size: 24px;
+}
+
+.container {
+  padding: 120px 0;
+  max-width: 1230px;
+  margin: auto;
+}
+
+.title {
+  margin: 0 auto;
 }
 
 .title-text {
+  font-weight: 500;
+  font-size: 40px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -34,14 +51,15 @@
   border: none;
 }
 
-.container {
-  width: 90%;
-  margin: 80px auto 120px;
+.flex-container {
+  display: flex;
+  gap: 10px;
+  line-height: 1;
+  margin: 80px auto 0;
 }
 
 .element {
-  display: inline-block;
-  width: 24.5%;
+  width: 25%;
 }
 
 .element:hover {
@@ -55,4 +73,44 @@
 .image {
   display: block;
   margin: auto auto 50px;
+}
+
+/*______________________________FOOTER____________________________*/
+
+.footer {
+  background: #10367c;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 23px;
+  font-style: normal;
+}
+
+.foot-groups {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.foot-element {
+  padding-left: -2%;
+  width: 33.3333%;
+}
+
+.foot-list {
+  margin: 24px 0 65px;
+  list-style: none;
+}
+
+.foot-list li {
+  margin: 24px 0;
+}
+
+.foot-list li:hover {
+  opacity: 0.7;
+}
+
+.foot-text {
+  margin: auto;
+  font-weight: 400;
+  font-size: 14px;
 }
