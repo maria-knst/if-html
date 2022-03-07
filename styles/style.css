@@ -8,11 +8,139 @@
   font-weight: 400;
 }
 
+.hovered:hover {
+  opacity: 0.7;
+}
+
 /*_____________________TOP-SECTION___________________________*/
 
 .top-section {
-  height: 200px;
-  background: #10367c;
+  background-image: url(../images/Top-section-castelmezzano.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  padding-bottom: 120px;
+}
+
+.top-frame {
+  padding: 50px 0 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.top-group {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.top-stays::after {
+  content: "";
+  display: block;
+  width: 85%;
+  margin: 0 auto 0;
+  padding-top: 10px;
+  border-bottom: 4px solid #f5bd41;
+}
+
+.top-attractions {
+  margin-right: 24px;
+}
+
+.top-attractions,
+.top-night-picture,
+.top-account,
+.top-logo {
+  padding-bottom: 10px;
+}
+
+.top-sing-out {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 195px;
+  height: 50px;
+  background: #ffffff;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  visibility: hidden;
+}
+
+.top-title {
+  margin: 106px 0 100px;
+  font-size: 50px;
+}
+
+.top-search-titles {
+  font-size: 18px;
+  display: flex;
+  margin: 100px 25px 25px 25px;
+}
+
+.search-destin {
+  width: 40%;
+}
+
+.top-search-inputs {
+  height: 65px;
+  margin: auto;
+  display: flex;
+  gap: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  padding-left: 8px;
+}
+
+.top-search-inputs input {
+  border: none;
+  font-size: 18px;
+}
+
+.destination {
+  width: 38%;
+  padding-left: 15px;
+}
+
+.date {
+  width: 21%;
+  border-radius: 8px;
+  border: 3px solid #d2a70b;
+}
+
+.people {
+  width: 25%;
+  border: none;
+}
+
+.but {
+  text-align: center;
+  background: #ffffff;
+}
+
+.top-search-button {
+  width: 16%;
+  border: none;
+  border-radius: 8px;
+  background: #3077c6;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.top-search-button:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.top-apps {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 120px;
 }
 
 /*_______________________WHAT DO WE OFFER SECTION________________*/
@@ -20,10 +148,10 @@
 .advantages {
   color: #383838;
   font-size: 24px;
+  padding: 120px 0;
 }
 
 .container {
-  padding: 120px 0;
   max-width: 1230px;
   margin: auto;
 }
@@ -78,6 +206,7 @@
 /*______________________________FOOTER____________________________*/
 
 .footer {
+  padding: 120px 0;
   background: #10367c;
   color: #ffffff;
   font-size: 20px;
