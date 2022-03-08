@@ -18,6 +18,7 @@
   background-image: url(../images/Top-section-castelmezzano.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
+  min-height: 100vh;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   padding-bottom: 120px;
@@ -31,13 +32,14 @@
   font-size: 24px;
 }
 
+
 .top-group {
   display: flex;
   gap: 24px;
   align-items: center;
 }
 
-.top-stays::after {
+.top-option1::after {
   content: "";
   display: block;
   width: 85%;
@@ -46,11 +48,11 @@
   border-bottom: 4px solid #f5bd41;
 }
 
-.top-attractions {
+.top-option2 {
   margin-right: 24px;
 }
 
-.top-attractions,
+.top-option2,
 .top-night-picture,
 .top-account,
 .top-logo {
