@@ -53,10 +53,25 @@
 }
 
 .top-option2,
-.top-night-picture,
-.top-account,
 .top-logo {
   padding-bottom: 10px;
+}
+
+.top-logo, .top-account, .google-play, .app-store{
+  height: 50px;
+}
+
+.top-night{
+  width: 32px;
+  height: 40px;
+}
+
+.top-account{
+  width: 40px;
+}
+
+.google-play, .app-store{
+  width: 135px;
 }
 
 .top-sing-out {
@@ -201,6 +216,8 @@
 }
 
 .image {
+  width: 100px;
+  height: 100px;
   display: block;
   margin: auto auto 50px;
 }
