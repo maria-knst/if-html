@@ -38,12 +38,13 @@
   align-items: center;
 }
 
-.top-option1::after {
+.top-option1:hover::after,
+.top-option2:hover::after {
   content: "";
   display: block;
   width: 85%;
   margin: 0 auto 0;
-  padding-top: 10px;
+  padding-top: 8px;
   border-bottom: 4px solid #f5bd41;
 }
 
@@ -52,6 +53,13 @@
 }
 
 .top-option2,
+.top-option1 {
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-option2,
+.top-option1,
 .top-logo {
   padding-bottom: 10px;
 }
@@ -77,6 +85,10 @@
   width: 135px;
 }
 
+.google-play {
+  margin-top: -4px;
+}
+
 .top-sing-out {
   display: flex;
   align-items: center;
@@ -92,14 +104,14 @@
 }
 
 .top-title {
-  margin: 106px 0 100px;
+  padding: 106px 0 100px;
   font-size: 50px;
 }
 
 .top-search-titles {
   font-size: 18px;
   display: flex;
-  margin: 100px 25px 25px 25px;
+  padding: 0px 25px 25px 25px;
 }
 
 .search-destin {
@@ -160,7 +172,7 @@
   display: flex;
   gap: 15px;
   justify-content: center;
-  margin-top: 120px;
+  padding-top: 120px;
 }
 
 /*_______________________WHAT DO WE OFFER SECTION________________*/
@@ -247,16 +259,24 @@
   width: 33.3333%;
 }
 
+.foot-title{
+  font-weight: 500;
+}
+
 .foot-list {
-  margin: 24px 0 65px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 65px;
   list-style: none;
 }
 
-.foot-list li {
-  margin: 24px 0;
+.foot-list a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 24px 0 0;
 }
 
-.foot-list li:hover {
+.foot-list a:hover {
   opacity: 0.7;
 }
 
