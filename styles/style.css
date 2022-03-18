@@ -32,19 +32,19 @@
   font-size: 24px;
 }
 
-
 .top-group {
   display: flex;
   gap: 24px;
   align-items: center;
 }
 
-.top-option1::after {
+.top-option1:hover::after,
+.top-option2:hover::after {
   content: "";
   display: block;
   width: 85%;
   margin: 0 auto 0;
-  padding-top: 10px;
+  padding-top: 8px;
   border-bottom: 4px solid #f5bd41;
 }
 
@@ -53,10 +53,40 @@
 }
 
 .top-option2,
-.top-night-picture,
-.top-account,
+.top-option1 {
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-option2,
+.top-option1,
 .top-logo {
   padding-bottom: 10px;
+}
+
+.top-logo,
+.top-account,
+.google-play,
+.app-store {
+  height: 50px;
+}
+
+.top-night {
+  width: 32px;
+  height: 40px;
+}
+
+.top-account {
+  width: 40px;
+}
+
+.google-play,
+.app-store {
+  width: 135px;
+}
+
+.google-play {
+  margin-top: -4px;
 }
 
 .top-sing-out {
@@ -74,18 +104,24 @@
 }
 
 .top-title {
-  margin: 106px 0 100px;
+  padding: 106px 0 100px;
   font-size: 50px;
+  font-weight: 500;
 }
 
 .top-search-titles {
   font-size: 18px;
   display: flex;
-  margin: 100px 25px 25px 25px;
+  padding: 0 25px 25px 25px;
 }
 
 .search-destin {
   width: 40%;
+}
+
+.search-destin,
+.search-check {
+  font-size: 18px;
 }
 
 .top-search-inputs {
@@ -122,6 +158,7 @@
 .but {
   text-align: center;
   background: #ffffff;
+  font-size: 18px;
 }
 
 .top-search-button {
@@ -142,7 +179,7 @@
   display: flex;
   gap: 15px;
   justify-content: center;
-  margin-top: 120px;
+  padding-top: 120px;
 }
 
 /*_______________________WHAT DO WE OFFER SECTION________________*/
@@ -154,6 +191,7 @@
 }
 
 .container {
+  padding: 0 16px;
   max-width: 1230px;
   margin: auto;
 }
@@ -201,6 +239,8 @@
 }
 
 .image {
+  width: 100px;
+  height: 100px;
   display: block;
   margin: auto auto 50px;
 }
@@ -227,16 +267,24 @@
   width: 33.3333%;
 }
 
+.foot-title {
+  font-weight: 500;
+}
+
 .foot-list {
-  margin: 24px 0 65px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 65px;
   list-style: none;
 }
 
-.foot-list li {
-  margin: 24px 0;
+.foot-list a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 24px 0 0;
 }
 
-.foot-list li:hover {
+.foot-list a:hover {
   opacity: 0.7;
 }
 
@@ -244,4 +292,94 @@
   margin: auto;
   font-weight: 400;
   font-size: 14px;
+}
+
+.foot-logo-respons {
+  display: none;
+}
+
+/*____________________________ADAPTIVE_______________________*/
+
+@media screen and (max-width: 600px) {
+  /*_____________TOP-SECTION__________________*/
+
+  .top-frame {
+    flex-direction: column;
+  }
+  .top-search-button {
+    font-size: 12px;
+  }
+
+  /*__________________ADVANTAGES______________________*/
+  .advantages {
+    padding: 25px 0 40px;
+  }
+  .flex-container {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    margin-top: 35px;
+  }
+  .highlight {
+    display: none;
+  }
+
+  .element {
+    width: 100%;
+  }
+
+  /* ________________FOOTER__________________*/
+  .footer {
+    padding: 40px 0;
+  }
+  .foot-list {
+    display: none;
+  }
+  .foot-title {
+    margin-bottom: 30px;
+    text-decoration: underline;
+  }
+
+  .foot-logo-respons {
+    display: block;
+    margin: auto auto 40px;
+  }
+
+  .foot-groups {
+    margin: 0 15%;
+    gap: 4%;
+    font-size: 15px;
+    text-align: center;
+  }
+  .foot-text {
+    margin-left: 20%;
+    font-size: 12px;
+  }
+  .foot-element {
+    width: 25%;
+  }
+  .foot-grow-element {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  /*__________________ADVANTAGES______________________*/
+  .element {
+    width: 100%;
+  }
+  .title-text {
+    font-size: 28px;
+    padding: 0;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .image {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+  }
+
+  /* ________________FOOTER__________________*/
 }

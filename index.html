@@ -10,24 +10,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>TripHouse_site</title>
   </head>
+
   <body>
-    <div class="top-section">
+    <header class="top-section">
       <div class="container">
         <div class="top-frame">
-          <img src="./images/svg/logo_vector.svg" alt="logo" class="top-logo" />
+          <svg class="top-logo">
+            <use xlink:href="../images/svg/Sprite.svg#logo_vector"></use>
+          </svg>
           <div class="top-group">
-            <p class="top-option1 hovered">Stays</p>
-            <p class="top-option2 hovered">Attractions</p>
-            <img
-              src="./images/svg/Night.svg"
-              alt="night"
-              class="top-night-picture hovered"
-            />
-            <img
-              src="./images/svg/AccountCircle.svg"
-              alt="account"
-              class="top-account hovered"
-            />
+            <a href="#" class="top-option1 hovered">Stays</a>
+            <a href="#" class="top-option2 hovered">Attractions</a>
+
+            <svg class="top-night hovered">
+              <use xlink:href="../images/svg/Sprite.svg#Night"></use>
+            </svg>
+            <svg class="top-account hovered">
+              <use xlink:href="../images/svg/Sprite.svg#AccountCircle"></use>
+            </svg>
           </div>
         </div>
 
@@ -72,14 +72,13 @@
             alt="google_play"
             class="google-play hovered"
           />
-          <img
-            src="./images/svg/App_Store.svg"
-            alt="app_store"
-            class="app-store hovered"
-          />
+
+          <svg class="app-store hovered">
+            <use xlink:href="../images/svg/Sprite.svg#App_Store"></use>
+          </svg>
         </div>
       </div>
-    </div>
+    </header>
 
     <div class="advantages">
       <div class="container">
@@ -90,67 +89,72 @@
 
         <div class="flex-container">
           <div class="element">
-            <img
-              class="image"
-              src="./images/HeadsetMicOutlined.png"
-              alt="headphones"
-            />
+            <svg class="image">
+              <use
+                xlink:href="../images/svg/Sprite.svg#HeadsetMicOutlined"
+              ></use>
+            </svg>
             <p class="text">Support 24/7</p>
           </div>
           <div class="element">
-            <img class="image" src="./images/ForumOutlined.png" alt="comment" />
+            <svg class="image">
+              <use xlink:href="../images/svg/Sprite.svg#ForumOutlined"></use>
+            </svg>
             <p class="text">Communicate directly</p>
           </div>
           <div class="element">
-            <img
-              class="image"
-              src="./images/DevicesOutlined.png"
-              alt="devices"
-            />
+            <svg class="image">
+              <use xlink:href="../images/svg/Sprite.svg#DevicesOutlined"></use>
+            </svg>
             <p class="text">Book online</p>
           </div>
           <div class="element">
-            <img
-              class="image"
-              src="./images/ThumbUpAltOutlined.png"
-              alt="like"
-            />
+            <svg class="image">
+              <use
+                xlink:href="../images/svg/Sprite.svg#ThumbUpAltOutlined"
+              ></use>
+            </svg>
             <p class="text">Real guest reviews</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="footer">
+    <footer class="footer">
       <div class="container">
+        <img
+          src="./images/svg/logo_vector-respons.svg"
+          alt="logo"
+          class="foot-logo-respons"
+        />
         <div class="foot-groups">
           <div class="foot-element">
             <h4 class="foot-title">About</h4>
             <ul class="foot-list">
-              <li>How Triphouse works</li>
-              <li>Careers</li>
-              <li>Privacy</li>
-              <li>Terms</li>
+              <a href="#">How Triphouse works</a>
+              <a href="#">Careers</a>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
             </ul>
           </div>
 
-          <div class="foot-element">
+          <div class="foot-element foot-grow-element">
             <h4 class="foot-title">Property types</h4>
             <ul class="foot-list">
-              <li>Guest houses</li>
-              <li>Hotels</li>
-              <li>Apartments</li>
-              <li>Villas</li>
-              <li>Holiday homes</li>
-              <li>Hostels</li>
+              <a href="#">Guest houses</a>
+              <a href="#">Hotels</a>
+              <a href="#">Apartments</a>
+              <a href="#">Villas</a>
+              <a href="#">Holiday homes</a>
+              <a href="#">Hostels</a>
             </ul>
           </div>
 
           <div class="foot-element">
             <h4 class="foot-title">Support</h4>
             <ul class="foot-list">
-              <li>Contact Customer Service</li>
-              <li>FAQ</li>
+              <a href="#">Contact Customer Service</a>
+              <a href="#">FAQ</a>
             </ul>
           </div>
         </div>
@@ -159,6 +163,6 @@
           &copy;2020 Triphouse, Inc. All rights reserved
         </h4>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
