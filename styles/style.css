@@ -12,19 +12,42 @@
   opacity: 0.7;
 }
 
-.col-1 { width: 8.33%;  }
-.col-2 { width: 16.66%; }
-.col-3 { width: 25%;    }
-.col-4 { width: 33.33%; }
-.col-5 { width: 41.66%; }
-.col-6 { width: 50%;    }
-.col-7 { width: 58.33%; }
-.col-8 { width: 66.66%; }
-.col-9 { width: 75%;    }
-.col-10{ width: 83.33%; }
-.col-11{ width: 91.66%; }
-.col-12{ width: 100%;   }
-
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
 
 /*_____________________TOP-SECTION___________________________*/
 
@@ -53,14 +76,22 @@
   justify-content: right;
 }
 
-.top-option1:hover::after,
-.top-option2:hover::after {
+.top-option1:after,
+.top-option2:after {
   content: "";
   display: block;
-  width: 85%;
-  margin: 0 auto 0;
-  padding-top: 8px;
+  position: absolute;
+  width: 0;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-bottom: 4px solid #f5bd41;
+  transition: width 0.5s;
+}
+
+.top-option1:hover::after,
+.top-option2:hover::after {
+  width: 85%;
 }
 
 .top-option2 {
@@ -71,6 +102,7 @@
 .top-option1 {
   text-decoration: none;
   color: #fff;
+  position: relative;
 }
 
 .top-option2,
@@ -213,25 +245,36 @@
 
 .title {
   margin: 0 auto;
+  text-align: center;
 }
 
 .title-text {
+  display: inline-block;
   font-weight: 500;
   font-size: 40px;
   padding-bottom: 20px;
   text-align: center;
+  position: relative;
 }
 
 .title:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
-.highlight {
-  width: 100px;
-  height: 4px;
-  background: #f5bd41;
-  margin: auto;
-  border: none;
+.title-text:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 4px solid #f5bd41;
+  transition: width 0.5s;
+}
+
+.title-text:hover::after {
+  width: 35%;
 }
 
 .flex-container {
@@ -256,6 +299,38 @@
   margin: auto auto 50px;
 }
 
+/*______________________HOMES_GUESTS_LOVES_________________________*/
+
+.homes {
+  padding: 120px 0;
+  background: #eaf0f9;
+  font-family: "Roboto", sans-serif;
+}
+
+.homes__flex-container {
+  display: flex;
+  gap: 1.5%;
+  margin: 105px auto 0;
+}
+
+.homes__label {
+  color: #3077c6;
+  padding: 24px 0;
+}
+
+.homes__destination {
+  color: #bfbfbf;
+}
+
+.homes__image {
+  width: 98%;
+  height: auto;
+}
+
+.homes__arrow {
+  display: none;
+}
+
 /*______________________________FOOTER____________________________*/
 
 .footer {
@@ -272,7 +347,6 @@
   justify-content: space-between;
   text-align: left;
 }
-
 
 .foot-title {
   font-weight: 500;
@@ -307,6 +381,18 @@
 
 /*____________________________ADAPTIVE_______________________*/
 
+@media screen and (max-width: 840px) {
+  /*__________________HOMES__________________*/
+
+  .homes__flex-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .homes__element {
+    width: 48%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   /*_____________TOP-SECTION__________________*/
 
@@ -333,6 +419,42 @@
 
   .element {
     width: 100%;
+  }
+
+  /*__________________HOMES__________________*/
+
+  .homes__flex-container {
+    margin: 35px auto 0;
+    position: relative;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .homes__arrow {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 95%;
+    transform: translate(0%, -50%);
+    max-width: 40px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 1px 5px 5px #8a8181;
+    transition: box-shadow 0.2s;
+  }
+
+  .homes__arrow:active {
+    box-shadow: 1px 1px 1px #8a8989;
+  }
+
+  .homes__arrow img {
+    width: 40%;
+    height: 40%;
   }
 
   /* ________________FOOTER__________________*/
@@ -370,6 +492,14 @@
   }
 }
 
+@media screen and (max-width: 520px) {
+  .homes__arrow {
+    width: 28px;
+    height: 28px;
+    top: 30%;
+  }
+}
+
 @media screen and (max-width: 362px) {
   /*__________________ADVANTAGES______________________*/
   .element {
@@ -386,6 +516,24 @@
     width: 70px;
     height: 70px;
     margin-bottom: 15px;
+  }
+
+  /*__________________HOMES__________________*/
+
+  .homes {
+    padding: 40px 0;
+  }
+
+  .homes__flex-container {
+    font-size: 12px;
+  }
+
+  .homes__label {
+    padding: 4px 0;
+  }
+
+  .homes__arrow {
+    top: 40%;
   }
 
   /* ________________FOOTER__________________*/
