@@ -307,13 +307,39 @@
   font-family: "Roboto", sans-serif;
 }
 
-.homes__flex-container {
+.places__flex-container {
   display: flex;
   gap: 1.5%;
   margin: 105px auto 0;
+  position: relative;
 }
 
-.homes__label {
+.places__arrow {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: calc(100% - 25px);
+  transform: translate(0%, -50%);
+  max-width: 40px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 1px 5px 5px #8a8181;
+  transition: box-shadow 0.2s;
+}
+
+.places__arrow:active {
+  box-shadow: 1px 1px 1px #8a8989;
+}
+
+.places__arrow img {
+  width: 40%;
+  height: 40%;
+}
+
+.places__label {
   color: #3077c6;
   padding: 24px 0;
 }
@@ -322,13 +348,55 @@
   color: #bfbfbf;
 }
 
-.homes__image {
+.places__image {
   width: 98%;
   height: auto;
 }
 
-.homes__arrow {
-  display: none;
+/*______________________BEST_DESTINATIONS___________________________*/
+
+.best-destinations {
+  padding: 120px 0;
+}
+
+.best-dest__flex-container {
+  margin-top: 65px;
+}
+
+.rotate-arrow {
+  transform: rotate(90deg);
+  top: 100%;
+  left: calc(50% - 25px);
+  box-shadow: 5px 0 5px #8a8181;
+}
+
+.best-dest__places {
+  width: 50%;
+  display: flex;
+  gap: 0;
+  margin-top: 105px;
+  background: #f3f3f4;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+.best-dest__button {
+  width: 33%;
+  height: 64px;
+  border: none;
+  border-radius: 8px;
+  background: #f3f3f4;
+}
+
+.best-dest__button:active {
+  background: #10367c;
+  color: #fff;
+}
+
+.best-dest__button-checked {
+  background: #10367c;
+  color: #fff;
 }
 
 /*______________________________FOOTER____________________________*/
@@ -384,12 +452,24 @@
 @media screen and (max-width: 840px) {
   /*__________________HOMES__________________*/
 
-  .homes__flex-container {
+  .places__flex-container {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .homes__element {
+  .places__element {
     width: 48%;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /*_______________BEST_DESTINATIONS______________ */
+  .rotate-arrow {
+    transform: rotate(-360deg);
+    top: 40%;
+    left: calc(100% - 25px);
+    box-shadow: 1px 5px 5px #8a8181;
   }
 }
 
@@ -423,38 +503,8 @@
 
   /*__________________HOMES__________________*/
 
-  .homes__flex-container {
+  .places__flex-container {
     margin: 35px auto 0;
-    position: relative;
-  }
-
-  .hidden {
-    display: none;
-  }
-
-  .homes__arrow {
-    display: block;
-    position: absolute;
-    top: 40%;
-    left: 95%;
-    transform: translate(0%, -50%);
-    max-width: 40px;
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    background: #fff;
-    box-shadow: 1px 5px 5px #8a8181;
-    transition: box-shadow 0.2s;
-  }
-
-  .homes__arrow:active {
-    box-shadow: 1px 1px 1px #8a8989;
-  }
-
-  .homes__arrow img {
-    width: 40%;
-    height: 40%;
   }
 
   /* ________________FOOTER__________________*/
@@ -493,10 +543,11 @@
 }
 
 @media screen and (max-width: 520px) {
-  .homes__arrow {
+  .places__arrow {
     width: 28px;
     height: 28px;
     top: 30%;
+    left: calc(100% - 20px);
   }
 }
 
@@ -524,15 +575,15 @@
     padding: 40px 0;
   }
 
-  .homes__flex-container {
+  .places__flex-container {
     font-size: 12px;
   }
 
-  .homes__label {
+  .places__label {
     padding: 4px 0;
   }
 
-  .homes__arrow {
+  .places__arrow {
     top: 40%;
   }
 
