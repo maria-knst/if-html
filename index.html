@@ -125,62 +125,168 @@
           <h2 class="title-text">Homes guests loves</h2>
         </div>
 
-        <div class="homes__flex-container col-12">
-          <button class="homes__arrow">
+        <div class="places__flex-container col-12">
+          <button class="places__arrow">
             <img src="./images/svg/Arrow.svg" alt="->" />
           </button>
-          <div class="homes__element col-3">
+          <div class="places__element col-3">
             <figure>
               <img
                 src="./images/Homes_image_1.png"
                 id="homes_1"
-                class="homes__image"
+                class="places__image"
                 alt="home-img-1"
               />
-              <figcaption class="homes__label">Hotel Leopold</figcaption>
+              <figcaption class="places__label">Hotel Leopold</figcaption>
             </figure>
             <p class="homes__destination">Saint Petersburg, Russia</p>
           </div>
 
-          <div class="homes__element col-3">
+          <div class="places__element col-3">
             <figure>
               <img
                 src="./images/Homes_image_2.png"
                 id="homes_2"
-                class="homes__image"
+                class="places__image"
                 alt="home-img-2"
               />
-              <figcaption class="homes__label">Apartment Sunshine</figcaption>
+              <figcaption class="places__label">Apartment Sunshine</figcaption>
             </figure>
             <p class="homes__destination">Santa Cruz de Tenerife, Spain</p>
           </div>
 
-          <div class="homes__element col-3 hidden">
+          <div class="places__element col-3 hidden">
             <figure>
               <img
                 src="./images/Homes_image_3.png"
                 id="homes_3"
-                class="homes__image"
+                class="places__image"
                 alt="home-img-3"
               />
-              <figcaption class="homes__label">Villa Kunerad</figcaption>
+              <figcaption class="places__label">Villa Kunerad</figcaption>
             </figure>
             <p class="homes__destination">Vysokie Tatry, Slowakia</p>
           </div>
 
-          <div class="homes__element col-3 hidden">
+          <div class="places__element col-3 hidden">
             <figure>
               <img
                 src="./images/Homes_image_4.png"
                 id="homes_4"
-                class="homes__image"
+                class="places__image"
                 alt="home-img-4"
               />
-              <figcaption class="homes__label">Hostel Friendship</figcaption>
+              <figcaption class="places__label">Hostel Friendship</figcaption>
             </figure>
             <p class="homes__destination">Berlin, Germany</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="best-destinations">
+      <div class="container">
+        <div class="title">
+          <h2 class="title-text">The best destinations</h2>
+        </div>
+
+        <div class="best-dest__places">
+          <button class="best-dest__button best-dest__button-checked">
+            Regions
+          </button>
+          <button class="best-dest__button">Cities</button>
+          <button class="best-dest__button">
+            Places <span class="best-dest__span">of interest</span>
+          </button>
+        </div>
+
+        <div class="places__flex-container best-dest__flex-container col-12">
+          <button class="places__arrow rotate-arrow">
+            <img src="./images/svg/Arrow.svg" alt="->" />
+          </button>
+
+          <div class="places__element col-3">
+            <div class="places__image-element">
+              <img
+                src="./images/Best-dest-Maldives.png"
+                class="places__image"
+                alt="Maldives"
+              />
+              <div class="layer">
+                <a href="#" class="overlay"></a>
+                <button class="booking">Book now</button>
+              </div>
+            </div>
+
+            <h5 class="places__label">Maldives</h5>
+          </div>
+
+          <div class="places__element col-3">
+            <div class="places__image-element">
+              <img
+                src="./images/Best-dest-Spain.png"
+                class="places__image"
+                alt="Spain"
+              />
+              <div class="layer">
+                <a href="#" class="overlay"></a>
+                <button class="booking">Book now</button>
+              </div>
+            </div>
+            <h5 class="places__label">Spain</h5>
+          </div>
+
+          <div class="places__element col-3 hidden">
+            <div class="places__image-element">
+              <img
+                src="./images/Best-dest-Norway.png"
+                class="places__image"
+                alt="Norway"
+              />
+              <div class="layer">
+                <a href="#" class="overlay"></a>
+                <button class="booking">Book now</button>
+              </div>
+            </div>
+            <h5 class="places__label">Norway</h5>
+          </div>
+
+          <div class="places__element col-3 hidden">
+            <div class="places__image-element">
+              <img
+                src="./images/Best-dest-Island.png"
+                class="places__image"
+                alt="Island"
+              />
+              <div class="layer">
+                <a href="#" class="overlay"></a>
+                <button class="booking">Book now</button>
+              </div>
+            </div>
+            <h5 class="places__label">Island</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sign-up">
+      <div class="container sign-up__container">
+        <div class="user-container">
+          <picture>
+            <source
+              media="(max-width: 840px)"
+              srcset="./images/svg/user-logo.svg"
+            />
+            <img src="./images/svg/user.svg" alt="User" class="user-image" />
+          </picture>
+
+          <div class="user-description">
+            <h5>Sign up and get 20% off your first booking</h5>
+            <button class="user-button"></button>
+          </div>
+        </div>
+
+        <button class="sign-up__close"></button>
       </div>
     </section>
 

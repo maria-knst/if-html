@@ -7,6 +7,7 @@
     "prettier": "2.5.1"
   },
   "scripts": {
+    "sass:watch": "sass --watch styles/styles.scss styles/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/maria-knst/if-html/issues"
   },
-  "homepage": "https://github.com/maria-knst/if-html#readme"
+  "homepage": "https://github.com/maria-knst/if-html#readme",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
 }
