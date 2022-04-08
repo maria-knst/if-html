@@ -8,6 +8,11 @@
   font-weight: 400;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .hovered:hover {
   opacity: 0.7;
 }
@@ -59,6 +64,7 @@
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   padding-bottom: 120px;
+  order: 1;
 }
 
 .top-frame {
@@ -237,6 +243,7 @@
   color: #383838;
   font-size: 24px;
   padding: 120px 0;
+  order: 2;
 }
 
 .container {
@@ -307,6 +314,7 @@
   padding: 120px 0;
   background: #eaf0f9;
   font-family: "Roboto", sans-serif;
+  order: 3;
 }
 
 .places__flex-container {
@@ -359,7 +367,8 @@
 /*______________________BEST_DESTINATIONS___________________________*/
 
 .best-destinations {
-  padding: 120px 0;
+  padding: 120px 0 128px 0;
+  order: 4;
 }
 
 .best-dest__flex-container {
@@ -451,7 +460,7 @@
 /*__________________________SING-UP_______________________________*/
 
 .sign-up {
-  margin: 40px 0 120px;
+  order: 5;
 }
 
 .sign-up__container {
@@ -534,8 +543,26 @@
 /*____________________GUESTS_REVIEWS_________________________*/
 
 .reviews {
-  margin: 120px 0;
+  order: 6;
+  padding: 120px 0;
   font-family: "Roboto", sans-serif;
+}
+
+.adaptive-title-text {
+  display: none;
+}
+
+.reviews__element {
+  display: flex;
+  flex-direction: column;
+  background: #eaf0f9;
+}
+
+.places__inner-flex-container {
+  display: flex;
+  gap: 1.5%;
+  justify-content: space-between;
+  position: relative;
 }
 
 .reviews__image-part {
@@ -574,7 +601,6 @@
   background: #eaf0f9;
   margin: 0;
   padding: 24px;
-  height: 50%;
 }
 
 .reviews__hostel {
@@ -624,6 +650,7 @@
 .reviews-account {
   width: 54px;
   height: 54px;
+  fill: #bfbfbf;
 }
 
 .user-name {
@@ -659,6 +686,36 @@
   font-size: 18px;
 }
 
+.reviews__places_arrow {
+  top: 25%;
+}
+
+.dots {
+  display: none;
+}
+
+.flex_dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #333333;
+}
+
+.active-dot {
+  background: #333333;
+}
+
+.places__flex-container-reviews {
+  flex-direction: column;
+}
+
 /*______________________________FOOTER____________________________*/
 
 .footer {
@@ -668,6 +725,7 @@
   font-size: 20px;
   line-height: 23px;
   font-style: normal;
+  order: 7;
 }
 
 .foot-groups {
@@ -797,6 +855,14 @@
   .user-button:before {
     content: "Install";
   }
+
+  /*________________________________REVIEWS________________*/
+  .reviews__element {
+    width: 48%;
+  }
+  .reviews__info-part {
+    height: 60%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -835,6 +901,10 @@
 
   /*______________SIGN-UP_____________________*/
 
+  .sign-up {
+    order: 6;
+  }
+
   .user-container {
     width: 85%;
   }
@@ -850,6 +920,21 @@
   .user-button {
     font-size: 14px;
     width: 25%;
+  }
+
+  .sign-up__container {
+    height: auto;
+  }
+
+  /*________________________________REVIEWS________________*/
+
+  .reviews {
+    order: 5;
+    padding: 40px 0;
+  }
+
+  .reviews__info-part {
+    height: 60%;
   }
 
   /* ________________FOOTER__________________*/
@@ -895,12 +980,72 @@
     left: calc(100% - 20px);
   }
 
+  .sign-up {
+    margin: 0;
+  }
+
   .user-description {
     margin: 0 8px;
   }
 
+  .homes {
+    padding: 40px 0;
+  }
+
   .best-dest__button {
     font-size: 20px;
+  }
+
+  .hidden_1 {
+    display: none;
+  }
+
+  .reviews {
+    padding: 40px 0;
+    background: #eaf0f9;
+  }
+
+  .reviews-account {
+    width: 44px;
+    height: 44px;
+  }
+
+  .reviews__score-num {
+    width: 40px;
+    height: 26px;
+  }
+  .adaptive-title-text {
+    display: block;
+    font-size: 18px;
+  }
+  .reviews__cost-layer {
+    display: none;
+  }
+
+  .reviews__hostel-name,
+  .reviews__hostel-location,
+  .reviews__score-num,
+  .user-name,
+  .user-location p,
+  .reviews__review p {
+    font-size: 15px;
+  }
+  .reviews__score-p {
+    font-size: 12px;
+  }
+  .reviews__title-text {
+    display: none;
+  }
+
+  .reviews__element {
+    width: 100%;
+  }
+  .dots {
+    display: block;
+  }
+
+  .reviews__places_arrow {
+    display: none;
   }
 }
 

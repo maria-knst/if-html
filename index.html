@@ -293,187 +293,205 @@
     <section class="reviews">
       <div class="container">
         <div class="title">
-          <h2 class="title-text">Guests reviews</h2>
+          <h2 class="title-text reviews__title-text">Guests reviews</h2>
+          <h2 class="title-text adaptive-title-text">Reviews</h2>
         </div>
 
-        <div class="places__flex-container">
+        <div class="places__flex-container places__flex-container-reviews">
           <button class="places__arrow reviews__places_arrow">
             <img src="./images/svg/Arrow.svg" alt="->" />
           </button>
 
-          <div class="reviews__element col-4">
-            <div class="reviews__image-part">
-              <img
-                class="reviews__image"
-                src="./images/Hotels/Bali-hotel.png"
-                alt="Bali hostel"
-              />
-              <div class="reviews__cost-layer">
-                <a href="" class="overlay"></a>
-                <p class="rewiews__cost-span">
-                  From <span class="reviews__inner-span">250 USD</span>
-                </p>
+          <div class="places__inner-flex-container">
+            <div class="reviews__element col-4">
+              <div class="reviews__image-part">
+                <img
+                  class="reviews__image"
+                  src="./images/Hotels/Bali-hotel.png"
+                  alt="Bali hostel"
+                />
+                <div class="reviews__cost-layer">
+                  <a href="" class="overlay"></a>
+                  <p class="rewiews__cost-span">
+                    From <span class="reviews__inner-span">250 USD</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="reviews__info-part">
+                <div class="reviews__destination">
+                  <div class="reviews__hostel">
+                    <h6 class="reviews__hostel-name">Ubud Bali Resort&SPA</h6>
+                    <span class="reviews__hostel-location"
+                      >Bali, Indonesia</span
+                    >
+                  </div>
+
+                  <div class="reviews__score">
+                    <div class="reviews__score-num">9,4</div>
+                    <p class="reviews__score-p">1324 reviews</p>
+                  </div>
+                </div>
+
+                <div class="reviews__user">
+                  <svg class="reviews-account">
+                    <use
+                      xlink:href="../images/svg/Sprite.svg#AccountCircle"
+                    ></use>
+                  </svg>
+                  <div class="reviews__user-info">
+                    <h6 class="user-name">Hanna Ivanova</h6>
+                    <div class="user-location">
+                      <img
+                        class="reviews__flag"
+                        src="./images/Flags/Ukraine.png"
+                        alt="Ukraine"
+                      />
+                      <p>Ukraine</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reviews__review">
+                  <p>
+                    Great location, really pleasant and clean rooms, but the
+                    thing that makes this such a good place to stay are the
+                    staff. All of the people are incredibly helpful and generous
+                    with their time and advice.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div class="reviews__info-part">
-              <div class="reviews__destination">
-                <div class="reviews__hostel">
-                  <h6 class="reviews__hostel-name">Ubud Bali Resort&SPA</h6>
-                  <span class="reviews__hostel-location">Bali, Indonesia</span>
-                </div>
-
-                <div class="reviews__score">
-                  <div class="reviews__score-num">9,4</div>
-                  <p class="reviews__score-p">1324 reviews</p>
+            <div class="reviews__element col-4 hidden_1">
+              <div class="reviews__image-part">
+                <img
+                  class="reviews__image"
+                  src="./images/Hotels/Rotterdam-hotel.png"
+                  alt="Rotterdam hostel"
+                />
+                <div class="reviews__cost-layer">
+                  <a href="" class="overlay"></a>
+                  <p class="rewiews__cost-span">
+                    From <span class="reviews__inner-span">250 USD</span>
+                  </p>
                 </div>
               </div>
 
-              <div class="reviews__user">
-                <svg class="reviews-account">
-                  <use
-                    xlink:href="../images/svg/Sprite.svg#AccountCircle"
-                  ></use>
-                </svg>
-                <div class="reviews__user-info">
-                  <h6 class="user-name">Hanna Ivanova</h6>
-                  <div class="user-location">
-                    <img
-                      class="reviews__flag"
-                      src="./images/Flags/Ukraine.png"
-                      alt="Ukraine"
-                    />
-                    <p>Ukraine</p>
+              <div class="reviews__info-part">
+                <div class="reviews__destination">
+                  <div class="reviews__hostel">
+                    <h6 class="reviews__hostel-name">Ubud Bali Resort&SPA</h6>
+                    <span class="reviews__hostel-location"
+                      >Bali, Indonesia</span
+                    >
+                  </div>
+
+                  <div class="reviews__score">
+                    <div class="reviews__score-num">8,9</div>
+                    <p class="reviews__score-p">2016 reviews</p>
                   </div>
                 </div>
+
+                <div class="reviews__user">
+                  <svg class="reviews-account">
+                    <use
+                      xlink:href="../images/svg/Sprite.svg#AccountCircle"
+                    ></use>
+                  </svg>
+                  <div class="reviews__user-info">
+                    <h6 class="user-name">Adam Smith</h6>
+                    <div class="user-location">
+                      <img
+                        class="reviews__flag"
+                        src="./images/Flags/USA.png"
+                        alt="USA"
+                      />
+                      <p>USA</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reviews__review">
+                  <p>
+                    I've been in this hostel for a month and here is the best
+                    hostel of all Excellent management of excellent and ethical
+                    staff and bedrooms Bathrooms are always clean and excellent
+                    Most importantly, those who work here are kind and
+                    good-natured.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews__element col-4 hidden">
+              <div class="reviews__image-part">
+                <img
+                  class="reviews__image"
+                  src="./images/Hotels/Ourika-hotel.png"
+                  alt="Ourika hostel"
+                />
+                <div class="reviews__cost-layer">
+                  <a href="" class="overlay reviews-overlay"></a>
+                  <p class="rewiews__cost-span">
+                    From <span class="reviews__inner-span">250 USD</span>
+                  </p>
+                </div>
               </div>
 
-              <div class="reviews__review">
-                <p>
-                  Great location, really pleasant and clean rooms, but the thing
-                  that makes this such a good place to stay are the staff. All
-                  of the people are incredibly helpful and generous with their
-                  time and advice.
-                </p>
+              <div class="reviews__info-part">
+                <div class="reviews__destination">
+                  <div class="reviews__hostel">
+                    <h6 class="reviews__hostel-name">Ubud Bali Resort&SPA</h6>
+                    <span class="reviews__hostel-location"
+                      >Bali, Indonesia</span
+                    >
+                  </div>
+
+                  <div class="reviews__score">
+                    <div class="reviews__score-num">9,1</div>
+                    <p class="reviews__score-p">815 reviews</p>
+                  </div>
+                </div>
+
+                <div class="reviews__user">
+                  <svg class="reviews-account">
+                    <use
+                      xlink:href="../images/svg/Sprite.svg#AccountCircle"
+                    ></use>
+                  </svg>
+                  <div class="reviews__user-info">
+                    <h6 class="user-name">Anika Messer</h6>
+                    <div class="user-location">
+                      <img
+                        class="reviews__flag"
+                        src="./images/Flags/Germany.png"
+                        alt="Germany"
+                      />
+                      <p>Germany</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reviews__review">
+                  <p>
+                    Efficient, friendly, professional, and appropriately
+                    attentive. Great hotel in a great location. Easy access to
+                    all the surrounding historical sites. Staff is fantastic.
+                    Will definitely stay at this location during my next stay in
+                    Marocco.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="reviews__element col-4">
-            <div class="reviews__image-part">
-              <img
-                class="reviews__image"
-                src="./images/Hotels/Rotterdam-hotel.png"
-                alt="Rotterdam hostel"
-              />
-              <div class="reviews__cost-layer">
-                <a href="" class="overlay"></a>
-                <p class="rewiews__cost-span">
-                  From <span class="reviews__inner-span">250 USD</span>
-                </p>
-              </div>
-            </div>
-
-            <div class="reviews__info-part">
-              <div class="reviews__destination">
-                <div class="reviews__hostel">
-                  <h6 class="reviews__hostel-name">Ubud Bali Resort&SPA</h6>
-                  <span class="reviews__hostel-location">Bali, Indonesia</span>
-                </div>
-
-                <div class="reviews__score">
-                  <div class="reviews__score-num">8,9</div>
-                  <p class="reviews__score-p">2016 reviews</p>
-                </div>
-              </div>
-
-              <div class="reviews__user">
-                <svg class="reviews-account">
-                  <use
-                    xlink:href="../images/svg/Sprite.svg#AccountCircle"
-                  ></use>
-                </svg>
-                <div class="reviews__user-info">
-                  <h6 class="user-name">Adam Smith</h6>
-                  <div class="user-location">
-                    <img
-                      class="reviews__flag"
-                      src="./images/Flags/USA.png"
-                      alt="USA"
-                    />
-                    <p>USA</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="reviews__review">
-                <p>
-                  I've been in this hostel for a month and here is the best
-                  hostel of all Excellent management of excellent and ethical
-                  staff and bedrooms Bathrooms are always clean and excellent
-                  Most importantly, those who work here are kind and
-                  good-natured.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="reviews__element col-4">
-            <div class="reviews__image-part">
-              <img
-                class="reviews__image"
-                src="./images/Hotels/Ourika-hotel.png"
-                alt="Ourika hostel"
-              />
-              <div class="reviews__cost-layer">
-                <a href="" class="overlay reviews-overlay"></a>
-                <p class="rewiews__cost-span">
-                  From <span class="reviews__inner-span">250 USD</span>
-                </p>
-              </div>
-            </div>
-
-            <div class="reviews__info-part">
-              <div class="reviews__destination">
-                <div class="reviews__hostel">
-                  <h6 class="reviews__hostel-name">Ubud Bali Resort&SPA</h6>
-                  <span class="reviews__hostel-location">Bali, Indonesia</span>
-                </div>
-
-                <div class="reviews__score">
-                  <div class="reviews__score-num">9,1</div>
-                  <p class="reviews__score-p">815 reviews</p>
-                </div>
-              </div>
-
-              <div class="reviews__user">
-                <svg class="reviews-account">
-                  <use
-                    xlink:href="../images/svg/Sprite.svg#AccountCircle"
-                  ></use>
-                </svg>
-                <div class="reviews__user-info">
-                  <h6 class="user-name">Anika Messer</h6>
-                  <div class="user-location">
-                    <img
-                      class="reviews__flag"
-                      src="./images/Flags/Germany.png"
-                      alt="Germany"
-                    />
-                    <p>Germany</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="reviews__review">
-                <p>
-                  Efficient, friendly, professional, and appropriately
-                  attentive. Great hotel in a great location. Easy access to all
-                  the surrounding historical sites. Staff is fantastic. Will
-                  definitely stay at this location during my next stay in
-                  Marocco.
-                </p>
-              </div>
+          <div class="dots">
+            <div class="flex_dots">
+              <div class="dot active-dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
             </div>
           </div>
         </div>
