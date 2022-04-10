@@ -1045,10 +1045,6 @@ body {
     font-size: 30px;
   }
 
-  .top-frame {
-    flex-direction: column;
-  }
-
   .top-search-button {
     font-size: 12px;
   }
