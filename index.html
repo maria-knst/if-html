@@ -28,6 +28,7 @@
             <svg class="top-account hovered">
               <use xlink:href="../images/svg/Sprite.svg#AccountCircle"></use>
             </svg>
+            <div class="top__menu"></div>
           </div>
         </div>
 
@@ -64,6 +65,77 @@
             <button class="people but">2 Adults — 0 Children — 1 Room</button>
             <button class="top-search-button">Search</button>
           </div>
+        </form>
+
+        <form class="top-search-frame-adaptive">
+          <div class="top-frame-element top__destination">
+            <img src="./images/svg/Find.svg" alt="Find" />
+            <input
+              class="top__destination-input medium-font"
+              type="text"
+              value="Your destination or hotel name"
+            />
+          </div>
+          <div class="top-frame-element top__dates">
+            <div class="top__check-in">
+              <label for="check-in" class="top__check small-font"
+                >Check-in date</label
+              >
+              <button id="check-in" class="top__date-button medium-font">
+                Tue 15 Sept 2020
+              </button>
+            </div>
+            <div class="top__check-out">
+              <label for="check-out" class="top__check small-font"
+                >Check-out date</label
+              >
+              <button id="check-out" class="top__date-button medium-font">
+                Sat 19 Sept 2020
+              </button>
+            </div>
+          </div>
+          <div class="top-frame-element top__amount">
+            <div class="top__amount-element top__amount1">
+              <label class="top__amount-label small-font" for="top-1"
+                >Adults</label
+              >
+              <input
+                class="top__amount-input medium-font"
+                id="top-1"
+                type="number"
+                max="15"
+                min="0"
+                value="2"
+              />
+            </div>
+            <div class="top__amount-element top__amount2">
+              <label class="top__amount-label small-font" for="top-2"
+                >Children</label
+              >
+              <input
+                class="top__amount-input medium-font"
+                id="top-2"
+                type="number"
+                max="15"
+                min="0"
+                value="0"
+              />
+            </div>
+            <div class="top__amount-element top__amount3">
+              <label class="top__amount-label small-font" for="top-3"
+                >Rooms</label
+              >
+              <input
+                class="top__amount-input medium-font"
+                id="top-3"
+                type="number"
+                max="15"
+                min="0"
+                value="1"
+              />
+            </div>
+          </div>
+          <button class="top-frame-element top__search">Search</button>
         </form>
 
         <div class="top-apps">
