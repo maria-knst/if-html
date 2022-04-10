@@ -680,6 +680,7 @@ body {
 .user-location p {
   font-size: 18px;
   color: #8a8989;
+  padding-left: 4px;
 }
 
 .reviews__flag {
