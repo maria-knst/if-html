@@ -8,6 +8,10 @@
   font-weight: 400;
 }
 
+:root {
+  --col-size: calc(100% / 12);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -18,40 +22,40 @@ body {
 }
 
 .col-1 {
-  width: 8.33%;
+  width: var(--col-size);
 }
 .col-2 {
-  width: 16.66%;
+  width: calc(var(--col-size) * 2);
 }
 .col-3 {
-  width: 25%;
+  width: calc(var(--col-size) * 3);
 }
 .col-4 {
-  width: 33.33%;
+  width: calc(var(--col-size) * 4);
 }
 .col-5 {
-  width: 41.66%;
+  width: calc(var(--col-size) * 5);
 }
 .col-6 {
-  width: 50%;
+  width: calc(var(--col-size) * 6);
 }
 .col-7 {
-  width: 58.33%;
+  width: calc(var(--col-size) * 7);
 }
 .col-8 {
-  width: 66.66%;
+  width: calc(var(--col-size) * 8);
 }
 .col-9 {
-  width: 75%;
+  width: calc(var(--col-size) * 9);
 }
 .col-10 {
-  width: 83.33%;
+  width: calc(var(--col-size) * 10);
 }
 .col-11 {
-  width: 91.66%;
+  width: calc(var(--col-size) * 11);
 }
 .col-12 {
-  width: 100%;
+  width: calc(var(--col-size) * 12);
 }
 
 /*_____________________TOP-SECTION___________________________*/
