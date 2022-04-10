@@ -118,6 +118,11 @@
   height: 50px;
 }
 
+.top-logo {
+  width: 205px;
+  height: 40px;
+}
+
 .top-night {
   width: 32px;
   height: 40px;
@@ -597,6 +602,9 @@
   .top-option2 {
     display: none;
   }
+  .top-sing-out {
+    display: none;
+  }
   .top__menu {
     display: block;
     content: "";
@@ -622,15 +630,28 @@
     top: 10px;
     background: #ffffff;
   }
+  .top-apps {
+    padding-top: 40px;
+  }
 }
 
 @media screen and (max-width: 840px) {
   /*_______________TOP-SECTION_____________________*/
   .top-title {
-    padding: 50px 0 30px;
+    padding: 60px 0 30px;
+    font-size: 40px;
   }
-  .top-sing-out {
-    display: none;
+
+  .top-section {
+    background-size: cover;
+  }
+
+  .top-logo {
+    width: 160px;
+  }
+
+  .top-frame {
+    margin: 0;
   }
 
   .top-frame-element {
@@ -638,6 +659,13 @@
   }
   .top-search-frame {
     display: none;
+  }
+
+  .top-night {
+    width: 24px;
+  }
+  .top-account {
+    width: 32px;
   }
 
   .top-search-frame-adaptive {
@@ -655,6 +683,9 @@
     border-radius: 4px;
     margin-bottom: 8px;
   }
+  .top__destination {
+    justify-content: space-around;
+  }
   .top__destination-input {
     width: 95%;
   }
@@ -667,6 +698,7 @@
   .top__check-out {
     width: 50%;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     background: #ffffff;
     border-radius: 4px;
@@ -706,6 +738,7 @@
     background: #3077c6;
     width: 100%;
     border: none;
+    border-radius: 4px;
     color: #ffffff;
   }
 
@@ -809,10 +842,10 @@
 
 @media screen and (max-width: 600px) {
   /*_____________TOP-SECTION__________________*/
-
-  .top-frame {
-    flex-direction: column;
+  .top-title {
+    font-size: 30px;
   }
+
   .top-search-button {
     font-size: 12px;
   }
@@ -896,6 +929,21 @@
 }
 
 @media screen and (max-width: 520px) {
+  .top__menu {
+    width: 24px;
+    height: 2px;
+  }
+  .top__menu:before {
+    width: 24px;
+    height: 2px;
+    top: -6px;
+  }
+  .top__menu:after {
+    width: 24px;
+    height: 2px;
+    top: 6px;
+  }
+
   .places__arrow {
     width: 28px;
     height: 28px;
@@ -913,6 +961,35 @@
 }
 
 @media screen and (max-width: 362px) {
+  /*________________TOP-SECTION______________________*/
+  .top-title {
+    padding-top: 40px;
+  }
+
+  .top-frame {
+    padding: 12px 0;
+  }
+  .top-group {
+    gap: 12px;
+  }
+
+  .top__destination-input {
+    width: 90%;
+  }
+
+  .top-night {
+    width: 16px;
+  }
+  .top-account {
+    width: 24px;
+  }
+  .top-logo {
+    width: 120px;
+  }
+
+  .top-apps {
+    padding-top: 32px;
+  }
   /*__________________ADVANTAGES______________________*/
   .element {
     width: 100%;
@@ -957,6 +1034,10 @@
   /*_____________SIGN-UP____________________*/
   .user-description {
     justify-content: space-between;
+  }
+
+  .sign-up {
+    padding: 0;
   }
 
   /* ________________FOOTER__________________*/
