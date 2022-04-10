@@ -121,10 +121,14 @@
 .top-night {
   width: 32px;
   height: 40px;
+  margin-bottom: 8px;
 }
 
 .top-account {
   width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+  fill: #ffffff;
 }
 
 .google-play,
@@ -227,6 +231,14 @@
   gap: 15px;
   justify-content: center;
   padding-top: 120px;
+}
+
+.top__menu {
+  display: none;
+}
+
+.top-search-frame-adaptive {
+  display: none;
 }
 
 /*_______________________WHAT DO WE OFFER SECTION________________*/
@@ -579,7 +591,133 @@
 
 /*____________________________ADAPTIVE_______________________*/
 
+@media screen and (max-width: 1020px) {
+  /*_______________TOP-SECTION_____________________*/
+  .top-option1,
+  .top-option2 {
+    display: none;
+  }
+  .top__menu {
+    display: block;
+    content: "";
+    width: 40px;
+    height: 4px;
+    position: relative;
+    background: #ffffff;
+    margin-bottom: 8px;
+  }
+  .top__menu:before {
+    content: "";
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    top: -10px;
+    background: #ffffff;
+  }
+  .top__menu:after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    top: 10px;
+    background: #ffffff;
+  }
+}
+
 @media screen and (max-width: 840px) {
+  /*_______________TOP-SECTION_____________________*/
+  .top-title {
+    padding: 50px 0 30px;
+  }
+  .top-sing-out {
+    display: none;
+  }
+
+  .top-frame-element {
+    min-height: 48px;
+  }
+  .top-search-frame {
+    display: none;
+  }
+
+  .top-search-frame-adaptive {
+    display: block;
+    background: #f5bd41;
+    width: 100%;
+    padding: 8px;
+    font-family: "Roboto", sans-serif;
+  }
+  .top__destination,
+  .top__amount {
+    width: 100%;
+    display: flex;
+    background: #ffffff;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .top__destination-input {
+    width: 95%;
+  }
+  .top__dates {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .top__check-in,
+  .top__check-out {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 4px;
+  }
+  .top__date-button {
+    border: none;
+    background: #ffffff;
+    text-align: start;
+  }
+  .top__check {
+    color: #383838;
+  }
+  .top__amount {
+    padding: 8px;
+  }
+  .top__amount-element {
+    width: 33.3333%;
+    padding: 0 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  .top__amount-label {
+    color: #383838;
+  }
+  .top__amount2 {
+    border-right: 1px solid #bfbfbf;
+    border-left: 1px solid #bfbfbf;
+  }
+
+  .top__amount-input,
+  .top__destination-input {
+    border: none;
+  }
+
+  .top__search {
+    background: #3077c6;
+    width: 100%;
+    border: none;
+    color: #ffffff;
+  }
+
+  .medium-font {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .small-font {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
   /*__________________HOMES__________________*/
 
   .places__flex-container {
