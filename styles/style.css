@@ -58,6 +58,12 @@ body {
   width: calc(var(--col-size) * 12);
 }
 
+.container {
+  padding: 0 16px;
+  max-width: 1230px;
+  margin: auto;
+}
+
 /*_____________________TOP-SECTION___________________________*/
 
 .top-section {
@@ -263,12 +269,6 @@ body {
   font-size: 24px;
   padding: 120px 0;
   order: 2;
-}
-
-.container {
-  padding: 0 16px;
-  max-width: 1230px;
-  margin: auto;
 }
 
 .title {
