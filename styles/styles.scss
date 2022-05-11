@@ -424,7 +424,7 @@ body {
       padding: 8px;
     }
     .top__amount-element {
-      width: 100% / 3;
+      width: calc(100%/3);
       padding: 0 8px;
       display: flex;
       flex-direction: column;
@@ -468,18 +468,20 @@ body {
     }
   }
 
+  $width: 20%;
+
   @include _520 {
     .top__menu {
-      width: 24px;
+      width: 20%;
       height: 2px;
     }
     .top__menu:before {
-      width: 24px;
+      width: 100%;
       height: 2px;
       top: -6px;
     }
     .top__menu:after {
-      width: 24px;
+      width: 100%;
       height: 2px;
       top: 6px;
     }

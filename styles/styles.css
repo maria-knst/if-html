@@ -347,7 +347,7 @@ body {
     padding: 8px;
   }
   .top-section .top__amount-element {
-    width: calc(100% / 3);
+    width: 33.3333333333%;
     padding: 0 8px;
     display: flex;
     flex-direction: column;
@@ -389,16 +389,16 @@ body {
 }
 @media screen and (max-width: 520px) {
   .top-section .top__menu {
-    width: 24px;
+    width: 20%;
     height: 2px;
   }
   .top-section .top__menu:before {
-    width: 24px;
+    width: 100%;
     height: 2px;
     top: -6px;
   }
   .top-section .top__menu:after {
-    width: 24px;
+    width: 100%;
     height: 2px;
     top: 6px;
   }
